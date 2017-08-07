@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">App</string>
+    <string name="tab_indoor">室内环境</string>
+    <string name="tab_friends">好友排行</string>
+    <string name="tab_suggest">健康建议</string>
+    <string name="comment_hint">评论几句</string>
+    <string name="CommentButtonDescription">提交您的评论</string>
+</resources>
