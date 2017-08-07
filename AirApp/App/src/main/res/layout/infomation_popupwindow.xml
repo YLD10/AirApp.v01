@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/fragment_friends_popupwindow_width"
+    android:layout_height="@dimen/fragment_friends_popupwindow_height"
+    android:background="@android:color/white"
+    android:id="@+id/relativeLayout_Main">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/linearLayout_Commment"
+        android:showDividers="beginning">
+
+        <EditText
+            android:layout_width="210dp"
+            android:layout_height="40dp"
+            android:id="@+id/editText_Comment"
+            android:inputType="textMultiLine"
+            android:textSize="@dimen/abc_action_bar_content_inset_material"
+            android:hint="@string/comment_hint"
+            android:focusable="true"
+            android:background="@android:drawable/editbox_background_normal"
+            android:textColor="@android:color/black" />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:id="@+id/imageButton_Comment"
+            android:clickable="true"
+            android:src="@drawable/send"
+            android:background="@android:drawable/btn_default"
+            android:scaleType="centerInside"
+            android:contentDescription="@string/CommentButtonDescription" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:id="@+id/linearLayout_Information"
+        android:focusableInTouchMode="false">
+
+        <RelativeLayout
+            android:layout_width="@dimen/fragment_friends_popupwindow_width_half"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/relativeLayout_Info_Me">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/textView_Info_Me_Temp"
+                android:text="Medium Text"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="48dp"
+                android:layout_alignLeft="@+id/textView_Info_Me_Air"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:id="@+id/textView_Info_Me_Humi"
+                android:layout_alignLeft="@+id/textView_Info_Me_Air"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/textView_Info_Me_Temp"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:id="@+id/textView_Info_Me_Air"
+                android:layout_below="@+id/textView_Info_Me_Humi"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="30dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/fragment_friends_popupwindow_width_half"
+            android:layout_height="match_parent"
+            android:id="@+id/relativeLayout_Info_Friend"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:id="@+id/textView_Info_Fri_Humi"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="30dp"
+                android:layout_alignLeft="@+id/textView_Info_Fri_Air"
+                android:layout_below="@+id/textView_Info_Fri_Temp"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:id="@+id/textView_Info_Fri_Temp"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="48dp"
+                android:layout_alignLeft="@+id/textView_Info_Fri_Air"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:id="@+id/textView_Info_Fri_Air"
+                android:layout_below="@+id/textView_Info_Fri_Humi"
+                android:layout_marginTop="30dp"
+                android:textColor="@android:color/black"
+                android:layout_centerHorizontal="true"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView_DividerLine_Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorTabDefault"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentEnd="false"
+        android:layout_above="@+id/textView_Padding" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:id="@+id/textView_Padding"
+        android:layout_above="@+id/linearLayout_Commment" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/imageView_Like"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="false"
+        android:layout_below="@+id/linearLayout_Information"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/love_like"
+        android:padding="5dp"
+        android:clickable="true"
+        android:visibility="visible" />
+
+    <TextView
+        android:layout_width="1px"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_DividerLine_Vertical"
+        android:layout_above="@+id/textView_DividerLine_Horizontal"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorTabDefault"
+        android:layout_marginLeft="@dimen/fragment_friends_popupwindow_width_half" />
+</RelativeLayout>

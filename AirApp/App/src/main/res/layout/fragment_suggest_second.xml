@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="#3000">
+
+    <ImageView
+        android:id="@+id/image_scenery"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:src="@drawable/scenery2"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:id="@+id/text_intro"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/text_intro1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="祁连山"
+                android:textSize="20sp"
+                android:textColor="#888888"
+                />
+
+            <TextView
+                android:id="@+id/text_intro2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="哺育河西走廊的生命之源"
+                android:textSize="20sp"
+                android:textColor="#888888"
+                />
+
+            <TextView
+                android:id="@+id/text_intro3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:text="
+祁连山位于甘肃和青海境内，是两省的界山。古时匈奴称“天”为祁连，从河西走廊南望，陡峭高大的祁连山直插云霄。祁连山地
+处西北干旱区，北边是北山戈壁和巴丹吉林沙漠，南边有柴达木干旱盆地，西边是库姆塔格沙漠，东边有黄土高原，祁连山像是一
+座伸进西部干旱区的湿岛。在祁连山的庇护下，河西走廊形成一个个绿洲城市，并产生了东西方文明交流的通道——丝绸之路。摄
+影／孙胜军
+
+"
+                android:textSize="20sp"
+                android:textColor="#888888"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
